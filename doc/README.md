@@ -4244,16 +4244,8 @@ defaults({ 'user': 'barney' }, { 'age': 36 }, { 'user': 'fred' });
 ### <a id="_createprototype-properties"></a>`_.create(prototype, [properties])`
 <a href="#_createprototype-properties">#</a> [&#x24C8;](https://github.com/lodash/lodash/blob/3.0.0/lodash.src.js#L8410 "View in source") [&#x24C9;][1]
 
-Creates an object that inherits from the given `prototype` object. If a
-`properties` object is provided its own enumerable properties are assigned
-to the created object.
-
-#### Arguments
-1. `prototype` *(Object)*: The object to inherit from.
-2. `[properties]` *(Object)*: The properties to assign to the object.
-
-#### Returns
-*(Object)*:  Returns the new object.
+Вернет объект, унаследованый от `prototype`. Если
+`properties` объекта указанны, то все собственные перечеслимые свойства присваиваются созданному объекту.
 
 #### Example
 ```js
