@@ -1943,26 +1943,13 @@ _.invoke([123, 456], String.prototype.split, '');
 ### <a id="_mapcollection-iteratee_identity-thisarg"></a>`_.map(collection, [iteratee=_.identity], [thisArg])`
 <a href="#_mapcollection-iteratee_identity-thisarg">#</a> [&#x24C8;](https://github.com/lodash/lodash/blob/3.0.0/lodash.src.js#L6063 "View in source") [&#x24C9;][1]
 
-Creates an array of values by running each element in `collection` through
-`iteratee`. The `iteratee` is bound to `thisArg` and invoked with three
-arguments; (value, index|key, collection).
+Возвращает массив значений, полученных путем вызова `iteratee` к каждому элементу в `collection`. `iteratee` связан с `thisArg` и вызывается с тремя аргументами: (value, index|key, collection).
 <br>
 <br>
-If a property name is provided for `predicate` the created "_.property"
-style callback returns the property value of the given element.
+Если в `predicate` переданно имя свойства, создается колбек в стиле "_.property", который возвращает значение свойства данного элемента.
 <br>
 <br>
-If an object is provided for `predicate` the created "_.matches" style
-callback returns `true` for elements that have the properties of the given
-object, else `false`.
-
-#### Arguments
-1. `collection` *(Array|Object|string)*: The collection to iterate over.
-2. `[iteratee=_.identity]` *(Function|Object|string)*: The function invoked per iteration. If a property name or object is provided it is used to create a "_.property" or "_.matches" style callback respectively.
-3. `[thisArg]` *(&#42;)*: The `this` binding of `iteratee`.
-
-#### Returns
-*(Array)*:  Returns the new mapped array.
+Если в `predicate` переданн объект, создается колбек в стиле "_.matches", который возвращает `true` для элементов, имеющих свойства данного объекта, и `false` в противном случае.
 
 #### Example
 ```js
